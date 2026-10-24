@@ -1,0 +1,37 @@
+{
+  "method": "symmetric absolute-residual interval",
+  "nominal_coverage": 0.8,
+  "calibration_period": {
+    "start_exclusive": "2017-05-26 15:00:00",
+    "end_inclusive": "2017-09-13 07:00:00",
+    "rows": 13086
+  },
+  "residual_quantile": {
+    "quantile": 0.8,
+    "absolute_residual_half_width": 4.970636892869436,
+    "validation_absolute_residual_count": 13086
+  },
+  "test_period": {
+    "start": "2017-09-13 08:00:00",
+    "end": "2017-12-31 23:00:00",
+    "observed_rows_scored": 13118,
+    "coverage": 0.7290745540478731
+  },
+  "coverage_by_building": {
+    "Panther_education_Cleopatra": 0.7750759878419453,
+    "Panther_education_Enriqueta": 0.5959324635456639,
+    "Panther_education_Misty": 0.9120795107033639,
+    "Panther_lodging_Kirk": 0.4870820668693009,
+    "Panther_office_Clementine": 0.875
+  },
+  "rows_by_building": {
+    "Panther_education_Cleopatra": 2632,
+    "Panther_education_Enriqueta": 2606,
+    "Panther_education_Misty": 2616,
+    "Panther_lodging_Kirk": 2632,
+    "Panther_office_Clementine": 2632
+  },
+  "bounds_policy": "lower = max(0, model_prediction - half_width); upper = model_prediction + half_width",
+  "test_actuals_used_for_interval_construction": false,
+  "note": "80% is nominal validation-calibrated coverage; realized test coverage may differ."
+}

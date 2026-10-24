@@ -1,0 +1,46 @@
+{
+  "selected_buildings": [
+    "Panther_lodging_Kirk",
+    "Panther_office_Clementine",
+    "Panther_education_Misty",
+    "Panther_education_Cleopatra",
+    "Panther_education_Enriqueta"
+  ],
+  "source_rows_for_selected_buildings": 87720,
+  "source_timestamps": 17544,
+  "train_end": "2017-05-26 15:00:00",
+  "validation_end": "2017-09-13 07:00:00",
+  "test_start": "2017-09-13 08:00:00",
+  "test_end": "2017-12-31 23:00:00",
+  "train_rows": 44242,
+  "validation_rows": 13086,
+  "test_rows": 13118,
+  "missing_target_rows_selected": 16180,
+  "missing_target_rate_selected": 0.18445052439580484,
+  "metrics": {
+    "validation": {
+      "model": {
+        "mae": 3.0785892699027526,
+        "rmse": 4.849809783848971
+      },
+      "benchmark": {
+        "mae": 5.573344750114627,
+        "rmse": 9.224581367534833
+      },
+      "rows": 13086
+    },
+    "test": {
+      "model": {
+        "mae": 4.125333693948138,
+        "rmse": 6.91930397423112
+      },
+      "benchmark": {
+        "mae": 7.305029638664431,
+        "rmse": 12.387878497493052
+      },
+      "rows": 13118
+    }
+  },
+  "target_missing_policy": "Missing electricity targets were excluded; no zero filling or target interpolation was used.",
+  "feature_leakage_policy": "Lag and rolling features use only prior timestamps within the same building. The pipeline is fitted on train rows only."
+}
